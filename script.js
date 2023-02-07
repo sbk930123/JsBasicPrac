@@ -386,16 +386,54 @@
 // 2. 조건식 : i가 100이 될 때 까지 조건 실행
 // 3. i = 1 <= 100; true 참이기 때문에 계속해서 증감한다. (설정한 조건까지 반복됨.)
 
-function hund_func() {
-  let final = 0;
-  for(let index = 1; index <=100; index++) {
-    final = final + index;
+// function hund_func() {
+  // let final = 0;
+  // for(let index = 1; index <=100; index++) {
+    // final = final + index;
     // final = final + index
     // (위 값을 풀어쓴다면) 
     // final = 0 + 1;
     // 조건식이 만족 될 때 까지 ++로 값이 증감되면서 반복 실행.
-  } 
-  console.log(final);
+  // } 
+  // console.log(final);
+// }
+
+// hund_func();
+
+// 1부터 100까지 숫자 중에 짝수만 html 출력 (반복문, 조건문)
+
+// for(let i = 1; i <= 100; i++) {
+  // if( i % 2 == 0) {
+    // document.write(i + '<br>')
+    // document.write(`<p>${i}</p>`)
+  // }
+// }
+
+// 이중 for문
+
+// for(let i = 0; i < 3; i++) {
+//   for(let j = 0; j < 3; j++) {
+//     document.write(`${i} + ${j} = ${i + j} <br>`);
+//   }
+// }
+
+
+//구구단 2-9 (이중 for 문)
+
+// for(let gu = 2; gu <= 9; gu++) {
+//   for(let dan = 1; dan <= 9; dan++) {
+//     document.write(`${gu} X ${dan} = ${gu * dan} <br>`);
+//   }
+// }
+
+
+for(let i = 0; i < 5; i ++) {
+  for(let j = 5; j > i; j --) {
+    document.write("*")
+  }
+  document.write("<br>")
 }
 
-hund_func();
+// 0 1 2 3 4
+
+// 5 4 3 2 1
